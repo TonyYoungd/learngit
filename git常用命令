@@ -1,0 +1,134 @@
+git init
+git add ****
+git commit -m "******"
+git config --global user.email "******"
+git config --global user.name "*******"
+git log
+git log --pretty=oneline
+git log --graph
+git reset --hard HEAD^
+git reset --hard *****
+git status
+
+
+
+管理修改：
+	第一次修改-> git add ->第二次修改 ->git add -> git commit
+
+删除：
+	git rm
+关联远程仓库：
+	git remote add origin http://github.com/**/**
+    推送：
+	git push -u oringin master(第一次)
+	git push origin master
+
+分支：
+	git branch	查看
+	git branch ×××  创建
+	git branch -d ××× 删除分支
+	git checkout -b ×××:创建并切换
+	git checkout ×××：切换
+	git merge ***:分支合并工作成果
+
+
+
+
+
+
+分支管理策略：
+	git merge --no-ff -m "*****" **
+		禁用Fast forward 创建一个新的commit -m 描述commit		
+
+bug分支：
+	git stash “储藏”工作现场
+	git stash list
+	git stash apply
+	git stash drop
+		  pop
+
+
+
+Feature分支：
+	git branch -d *** 删除分支
+	git branch -D *** 强行删除分支
+
+
+多人协作：
+	git remote 查看远程库的信息
+		-v 查看远程库的详细信息
+	推送分支：
+		git push origin master
+				dev
+	抓取分支：
+		git clone git@github.com:用户名/仓库
+	多人协作：
+
+标签管理：
+	创建标签：
+		git tag <name>
+		git tag <name> 版本号
+			-m 指定说明
+			-a 制定标签名
+			-s 用私钥签名一个标签
+			-d <tagname>删除标签
+		git push origin <tagname>
+
+	已经上传的标签进行删除：
+		先删除本地
+		再删除远程
+
+
+
+
+
+
+
+		git tag 查看所有标签
+		git show <tagname>
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
