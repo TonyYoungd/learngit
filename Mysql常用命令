@@ -1,0 +1,24 @@
+Mysql常用命令：
+	入门：
+		mysqladmin --version 获取服务器的工作状态
+		mysqladmin -u root password "*******"
+		mysql -u root -p
+	
+		/etc/init.d/mysqld start 在linux系统服务启动时启动mysql服务器。
+
+	管理：
+		ps -f | grep mysql 检查mysql是否启动
+		
+		
+		server mysql start 开启mysql服务器
+		mysqladmin -u root -p shutdown 关闭mysql服务器
+
+		use <db name>;
+		show databases;
+		show tables;
+		show columns from table;
+		show index from table;
+		show table status like table\G;
+
+	用户设置：
+		
